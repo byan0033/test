@@ -5,3 +5,11 @@ date: '2022-04-24'
 output: html_document
 ---
 Doing a change hh.
+
+```{r}
+x = seq(1:100)
+y = rnorm(100)
+dat = data.frame(x, y)
+ggplot(dat, aes(x = x, y = y)) +
+geom_line()
+```
